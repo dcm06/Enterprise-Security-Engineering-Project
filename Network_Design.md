@@ -1,7 +1,6 @@
 ## Network Design and Configuration
-
-Goal: Design Lighthouse Stores Network from scratch
 ---
+Goal: Design Lighthouse Stores Network from scratch
 ![Project Screenshot](images/1751518866513.jpeg)
 
 The store was divided into three departments (Subsequently tweaked going forward):
@@ -26,14 +25,15 @@ Configuration process
 ---
 1. Configured VLANs and SVI interfaces on the multilayer switch and enabled IP routing
 
- ![Project Screenshot](images/Screenshot2026-04-29174431.png)
- 
   Main Switch - Router on a stick VLAN configuration
+---
+ ![Project Screenshot](images/Screenshot2026-04-29174431.png)
+
+   Main Router - SVI configurations and 802.1Q VLAN trunking configurations
 ---
   ![Project Screenshot](images/Screenshot2026-04-29.png)
  
-  Main Router - SVI configurations and 802.1Q VLAN trunking configurations
----
+
 3. Created the same VLANs on the access switches to support VLAN trunking
 4. Set access ports for end devices and trunk ports between switches to carry VLANs 10, 20, and 30
 5. Configured trunk links to the LAPs and WLC, with VLAN 20 set as the native VLAN for management traffic
