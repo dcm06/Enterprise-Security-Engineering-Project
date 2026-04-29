@@ -53,23 +53,23 @@ With DHCP in place, both wired and wireless devices (including LAPs) successfull
 ---
 
 
-\n
 
 ## WLC setup:
 
 1. Assigned a static IP from VLAN 20 and accessed the WLC via a web browser
+
+![Project Screenshot](images/1751518866535(1).jpeg)
+---
+
 2. Created WLANs for management, office, and store departments
 3. Formed WLAN groups and linked them with their respective WLANs and LAPs
 4. Configured interfaces with VLAN IDs, names, and static IPs
-5. Mapped each WLAN to the corresponding interface
-
+6. Mapped each WLAN to the corresponding interface
+![Project Screenshot](images/1751518866535.jpeg)
 This allowed each LAP to broadcast the appropriate SSID to its assigned VLAN, and wireless devices received DHCP IPs based on their assigned VLAN pools.
+---
+
 
 Issue encountered:
+---
 The LAPs initially connected to the WLC but later disconnected. I discovered a VLAN mismatch: VLAN 20 was set as the native (untagged) VLAN on the trunk link, but the WLC had VLAN 20 configured as tagged. After disabling VLAN tagging for the management interface on the WLC, connectivity was restored.
-
-hashtag#networking
-hashtag#ciscopackettracer
-hashtag#networkarchitecture
-hashtag#dhcp
-hashtag#WirelessLAN
