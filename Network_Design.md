@@ -51,8 +51,8 @@ Configuration process
 
 With DHCP in place, both wired and wireless devices (including LAPs) successfully obtained IP addresses. Next, I configured the WLC.
 ---
-
 ## WLC setup:
+---
 1. Assigned a static IP from VLAN 20 and accessed the WLC via a web browser
 2. Created WLANs for management, office, and store departments
 3. Formed WLAN groups and linked them with their respective WLANs and LAPs
