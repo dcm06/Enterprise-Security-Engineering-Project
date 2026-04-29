@@ -25,9 +25,13 @@ Devices used:
 #Configuration process
 ---
 1. Configured VLANs and SVI interfaces on the multilayer switch and enabled IP routing
-![Project Screenshot](images/Screenshot 2026-04-29 174431.png)
 
-3. Created the same VLANs on the access switch to support VLAN trunking
+ ![Project Screenshot](images/Screenshot2026-04-29174431.png)
+  Main Switch - Router on a stick VLAN configuration
+---
+  ![Project Screenshot](images/Screenshot2026-04-29.png)
+  Main Router - SVI configurations and 802.1Q VLAN trunking configurations
+3. Created the same VLANs on the access switches to support VLAN trunking
 4. Set access ports for end devices and trunk ports between switches to carry VLANs 10, 20, and 30
 5. Configured trunk links to the LAPs and WLC, with VLAN 20 set as the native VLAN for management traffic
 6. Enabled DHCP on the multilayer switch and created pools for each VLAN, excluding static IPs reserved for management
