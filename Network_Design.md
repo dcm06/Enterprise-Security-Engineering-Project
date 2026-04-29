@@ -1,6 +1,7 @@
 ## Network Design and Configuration
----
+
 Goal: Design Lighthouse Stores Network from scratch
+---
 ![Project Screenshot](images/1751518866513.jpeg)
 
 The store was divided into three departments (Subsequently tweaked going forward):
