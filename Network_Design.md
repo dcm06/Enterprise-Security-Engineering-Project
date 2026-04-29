@@ -31,6 +31,7 @@ Configuration process
 
 ## Main Router - SVI configurations and 802.1Q VLAN trunking configurations
   ![Project Screenshot](images/Screenshot2026-04-29.png)
+---
  
 
 3. Created the same VLANs on the access switches to support VLAN trunking
