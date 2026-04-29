@@ -8,8 +8,8 @@ As a Cybersecurity student at Fanshawe college, i have gained theoretical and ha
 The Lighthouse Superstores has 1 branch, which consists of 1 Domain Controller which is the DNS and DHCP server, will have a Web server, File Server and Database server, 1 management PC, 2 office PC, and 2 store devices.
 
 In this project, the following Subnets have been configured as VLANS will be used:
-*Servers LAN Segment(192.168.1.0/28)
-*Internal Management Lan Segment (192.168.1.16/28)
+* Servers LAN Segment(192.168.1.0/28)
+* Internal Management Lan Segment (192.168.1.16/28)
 
 
 The following VMs will be used
@@ -25,16 +25,7 @@ The following VMs will be used
 |                      |                                                | Servers LAN Segment             | SERVERS(192.168.1.1)       |
 | -------------------  | ------------------------------------           | ------------------------------- | -------------------------- |
 
--	PfSense CE Firewall – Firewall and Router 
-	EM0 -WAN (DYNAMIC - Internet)
-	Em1 - LANMANAGEMENT(192.168.1.17)
-	Em2(192.168.1.1)
-	Opt1(192.168.1.33)
-o	Internal Management Lan Segment (192.168.1.16/28)
-o	Servers LAN Segment(192.168.1.0/28)
 
--	Windows 11 – Management PC1 (192.168.2.3)
-o	Internal Management Lan Segment (192.168.1.16/28)
 
 
 ---
