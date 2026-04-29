@@ -39,7 +39,10 @@ Configuration process
 ## Access Switch - VLAN configurations
   ![Project Screenshot](images/vlanconfigonaccessswitch.png)
 --- 
-3. Set access ports for end devices and trunk ports between switches to carry VLANs 10, 20, and 30
+3. Set access ports for end devices and trunk ports between switches and LAPs to carry VLANs 10, 20, and 30. Native trunks also set for management traffic from the WLC to LAPs
+## Access Switch - Access ports set for end device connections, trunk ports for connections between switches and LAPs, and Native trunk ports fr WLC management
+  ![Project Screenshot](images/2.png)
+--- 
 6. Configured trunk links to the LAPs and WLC, with VLAN 20 set as the native VLAN for management traffic
 7. Enabled DHCP on the multilayer switch and created pools for each VLAN, excluding static IPs reserved for management
 
