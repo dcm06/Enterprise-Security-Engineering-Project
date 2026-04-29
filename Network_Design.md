@@ -46,7 +46,9 @@ Configuration process
 --- 
 
 5. Enabled DHCP on the multilayer switch and created pools for each VLAN, excluding static IPs reserved for management
+
 ![Project Screenshot](images/1751518866498.jpeg)
+
 With DHCP in place, both wired and wireless devices (including LAPs) successfully obtained IP addresses. Next, I configured the WLC.
 ---
 
