@@ -1,7 +1,7 @@
-## Network Design and Configuration
-
-Goal: Design Lighthouse Stores Network from scratch
+Network Design and Configuration
 ---
+## Goal: Design Lighthouse Stores Network from scratch
+
 ![Project Screenshot](images/1751518866513.jpeg)
 
 The store was divided into three departments (Subsequently tweaked going forward):
@@ -26,12 +26,10 @@ Configuration process
 ---
 1. Configured VLANs and SVI interfaces on the multilayer switch and enabled IP routing
 
-  Main Switch - Router on a stick VLAN configuration
----
+## Main Switch - Router on a stick VLAN configuration
  ![Project Screenshot](images/Screenshot2026-04-29174431.png)
 
-   Main Router - SVI configurations and 802.1Q VLAN trunking configurations
----
+## Main Router - SVI configurations and 802.1Q VLAN trunking configurations
   ![Project Screenshot](images/Screenshot2026-04-29.png)
  
 
