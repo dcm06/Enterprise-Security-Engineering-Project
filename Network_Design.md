@@ -39,16 +39,18 @@ Configuration process
 ## Access Switch - VLAN configurations
   ![Project Screenshot](images/vlanconfigonaccessswitch.png)
 --- 
-3. Set access ports for end devices and trunk ports between switches and LAPs to carry VLANs 10, 20, and 30. Native trunks also set for management traffic from the WLC to LAPs
+3. Set access ports for end devices and trunk ports between switches and LAPs to carry VLANs 10, 20, and 30.
+4. Configured trunk links to the LAPs and WLC, with VLAN 20 set as the native VLAN for management traffic
 ## Access Switch - Access ports set for end device connections, trunk ports for connections between switches and LAPs, and Native trunk ports fr WLC management
   ![Project Screenshot](images/2.png)
 --- 
-6. Configured trunk links to the LAPs and WLC, with VLAN 20 set as the native VLAN for management traffic
-7. Enabled DHCP on the multilayer switch and created pools for each VLAN, excluding static IPs reserved for management
 
+5. Enabled DHCP on the multilayer switch and created pools for each VLAN, excluding static IPs reserved for management
+![Project Screenshot](images/1751518866498.jpeg)
 With DHCP in place, both wired and wireless devices (including LAPs) successfully obtained IP addresses. Next, I configured the WLC.
+---
 
-WLC setup:
+## WLC setup:
 1. Assigned a static IP from VLAN 20 and accessed the WLC via a web browser
 2. Created WLANs for management, office, and store departments
 3. Formed WLAN groups and linked them with their respective WLANs and LAPs
