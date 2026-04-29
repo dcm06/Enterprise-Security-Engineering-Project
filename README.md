@@ -30,7 +30,30 @@ The following VMs will be used
 
 ---
 
-## Usage
+## PHASE 1 — Foundation (Build the Enterprise Lab)
+Goal: Design Lighthouse Stores Network from scratch
+
+What to Build:
+*	Network Design and configuration (Packet Tracer)
+* Network segmentation:
+   * WAN / Internet
+   * Internal network (AD, users)
+
+* Routing
+  * VLAN Configuration
+  * Wireless Configuration
+
+* Virtual Lab Configuration ( VMWare )
+    * OS:
+        *	Windows Server (Domain Controller)
+        * Windows 10/11 clients
+        * Linux server (web/app)
+
+Skills Proven:
+•	Network design
+•	Subnetting & VLANs
+•	Basic enterprise architecture
+
 
 ```bash
 ./scriptname.sh -u username [OPTIONS]
