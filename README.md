@@ -10,6 +10,8 @@ The Lighthouse Superstores has 1 branch, which consists of 1 Domain Controller w
 In this project, the following Subnets have been configured as VLANS will be used:
 * Servers LAN Segment(192.168.1.0/28)
 * Internal Management Lan Segment (192.168.1.16/28)
+* Office Lan Segment (192.168.1.32/28)
+* Store Lan Segment (192.168.1.48/28)
 
 
 The following VMs will be used
@@ -18,11 +20,17 @@ The following VMs will be used
 | -------------------  | ------------------------------------           | ------------------------------- | -------------------------- |
 | Server 2025 Standard | Active Directory  Server and Domain Controller | Servers LAN Segment             | 192.168.1.10               |
 | -------------------  | ------------------------------------           | ------------------------------- | -------------------------- |
-| Windows 11           | Management PC1                                 | Internal Management Lan Segment | 192.168.1.25               |
+| Windows 11           | Management PAW (L-PAW)                         | Internal Management Lan Segment | 192.168.1.25               |
+| -------------------  | ------------------------------------           | ------------------------------- | -------------------------- |
+| Windows 11           | L-PC1                                          | Office Lan Segment              | 192.168.1.35               |
+| -------------------  | ------------------------------------           | ------------------------------- | -------------------------- |
+| Windows 11           | L-PC2                                          | Store Lan Segment               | 192.168.1.50               |
 | -------------------  | ------------------------------------           | ------------------------------- | -------------------------- |
 | PfSense CE Firewall  | Firewall and Router                            | WAN                             | WAN (DYNAMIC - Internet)   |
 |                      |                                                | Internal Management Lan Segment | LANMANAGEMENT(192.168.1.17)|
 |                      |                                                | Servers LAN Segment             | SERVERS(192.168.1.1)       |
+|                      |                                                | Office LAN Segment              | OFFICE(192.168.1.33)       |
+|                      |                                                | Store LAN Segment               | STORE(192.168.1.49)        |
 | -------------------  | ------------------------------------           | ------------------------------- | -------------------------- |
 
 
