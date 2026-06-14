@@ -58,6 +58,8 @@ What to Build:
      
 * Active Directory Domain Installation
     * Create Admin Account
+    * Install ADDS
+    * Create Forest
     * Join the management PC to the Domain 
 
 Skills Proven:
