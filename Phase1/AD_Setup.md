@@ -42,23 +42,31 @@ Once that is completed, test connection fromManagement PC to Server
 
 ## Step2: INSTALLING ACTIVE DIRECTORY DOMAIN SERVICES ON THE SERVER AND SETTING UP THE FOREST
 Now we would be installing the Active directory Domain Services using PoweShell cmdlet
-### Install-WindowsFeature -Name “AD-Domain-Services”
+#### Install-WindowsFeature -Name “AD-Domain-Services”
+
+![](../images/phase1/ADinstall.png)
+
+
+### Creating a New Local Admin user for management
+![](../images/phase1/adminuser.png)
  
 
-Creating a New Local Admin user for management
- 
+### Starting the OpenSSH Server for Remote Management
+- To get the status of the OpenSSH Server I used te powershell command
+     #### Get-Service -Name “sshd”
+- To start the service, I used
+     #### Start-Service -Name “sshd”
 
-Starting the OpenSSH Server for Remote Management
--	To get the status of the OpenSSH Server I used te powershell command
-Get-Service -Name “sshd”
--	To start the service, I used
-Start-Service -Name “sshd”
+![](../images/phase1/sshenable.png)
  
-Turn Off Firewall Profiles to allow SSH, Firewall rules will be added
--	Set-NetFirewallProfile -Profile Domain, Private, Public -Enabled False
--	Get-NetFirewallProfile | Select-Object Name, Enabled
+### Turned Off Firewall Profiles to allow SSH temporarily; 
+Firewall rules will be added when hardening
+- #### Set-NetFirewallProfile -Profile Domain, Private, Public -Enabled False
+- #### Get-NetFirewallProfile | Select-Object Name, Enabled
+
+![](../images/phase1/firewalllocalrules.png)
  
-Creating the forrest and promoting the SERVER to domain controller
+Creating the forest and promoting the SERVER to domain controller
  
 
 Confirming the Server is part of the domain, DNS Resolution, Forest and Domain FSMO Roles
