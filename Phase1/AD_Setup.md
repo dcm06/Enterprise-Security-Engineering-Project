@@ -66,45 +66,56 @@ Firewall rules will be added when hardening
 
 ![](../images/phase1/firewallruleslocal.png)
  
-Creating the forest and promoting the SERVER to domain controller
+
+### Creating the forest and promoting the SERVER to domain controller
+![](../images/phase1/forrestcreate.png)
+
+
+
+## STEP3: CONFIRMATIONS, USER CREATION AND ENABLING REMOTE DESKTOP
+
+### Confirming the Server is part of the domain, DNS Resolution, Forest and Domain FSMO Roles
+- Active Directory confirmation
+     #### Get-ADDomainController -Identity “SERVER-AD”
+- DNS Resolution
+     #### Resolve-DNSName -Name “lighthouse.local”
+- Roles Confirmation
+  - Forest-wide
+     #### Get-ADForest | Select-Object DomainNamingMaster, SchemaMaster
+  - Domain-Wide
+     #### Get-ADDomain | Select-Object PDCEmulator, RIDMaster, InfrastructureMaster
+
+![](../images/phase1/adconfirmation.png)
  
 
-Confirming the Server is part of the domain, DNS Resolution, Forest and Domain FSMO Roles
--	Active Directory confirmation
-Get-ADDomainController -Identity “SERVER-AD”
--	DNS Resolution
-Resolve-DNSName -Name “lighthouse.local”
--	Roles Confirmation
-o	Forest-wide
-Get-ADForest | Select-Object DomainNamingMaster, SchemaMaster
-o	Domain-Wide
-Get-ADDomain | Select-Object PDCEmulator, RIDMaster, InfrastructureMaster
- 
+### Add the Domain Admin Account to Domain Admins Group, and remove it from local Admins Group
+![](../images/phase1/admingroupedit.png)
 
-Add the Domain Admin Account to Domain Admins Group, and remove it from local Admins Group
- 
+Created this simple script to handle User Creation
 
-Creating a new user account
-$FullName = Read-Host "Enter User Full Name: "
-$FirstName = Read-Host "Enter User First Name: "
-$LastName = Read-Host "Enter User Last Name: "
-$UserName = Read-Host "Enter User User Name (firstInitial_Lastname): "
-$PrincipalName = Read-Host "Enter User Principal Name: (username@lighthouse.local): "
-$Password = Read-Host -AsSecureString "Enter User Temp Password: "
+### Creating a new user account
+#### $FullName = Read-Host "Enter User Full Name: "
+#### $FirstName = Read-Host "Enter User First Name: "
+#### $LastName = Read-Host "Enter User Last Name: "
+#### $UserName = Read-Host "Enter User User Name (firstInitial_Lastname): "
+#### $PrincipalName = Read-Host "Enter User Principal Name: (username@lighthouse.local): "
+#### $Password = Read-Host -AsSecureString "Enter User Temp Password: "
 
-New-ADUser -Name "$FullName" `
--GivenName "$FirstName" `
--Surname "$LastName" `
--SAMAccountName "$UserName" `
--UserPrincipalName "$PrincipalName" `
--Path "CN=Users,DC=lighthouse,DC=local" `
--Server "SERVER-AD" `
--AccountPassword $Password `
--Enabled $true `
--ChangePasswordAtLogon $true
- 
+#### New-ADUser -Name "$FullName" `
+#### -GivenName "$FirstName" `
+#### -Surname "$LastName" `
+#### -SAMAccountName "$UserName" `
+#### -UserPrincipalName "$PrincipalName" `
+#### -Path "CN=Users,DC=lighthouse,DC=local" `
+#### -Server "SERVER-AD" `
+#### -AccountPassword $Password `
+#### -Enabled $true `
+#### -ChangePasswordAtLogon $true
 
-Enabling Remote Desktop 
+![](../images/phase1/newusercreate.png)
+
+### Enabling Remote Desktop
+![](../images/phase1/remotedesktopenable.png)
  
 
 
