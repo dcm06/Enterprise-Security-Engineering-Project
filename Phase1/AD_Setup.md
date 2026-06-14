@@ -1,6 +1,6 @@
 Active Directory and Routing Setup 
 ---
-## Goal: Set-up Routing and Active Directory
+# Goal: Set-up Routing and Active Directory
 
 ![Project Screenshot](../images/Phase1networkimage.png)
 
