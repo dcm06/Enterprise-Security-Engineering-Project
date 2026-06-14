@@ -19,8 +19,11 @@ In this Phase, I will be setting up the two workstations L-PC1, and L-PC2 in the
 
 ---
 
+
+
+
 ## Renaming and joining the standard workstations to the domain
-Renaming Both workstations to L-PC1 and L-PC2 respectively
+### Renaming Both workstations to L-PC1 and L-PC2 respectively
 <img width="833" height="487" alt="image" src="https://github.com/user-attachments/assets/1da9437e-f3ef-4f9f-8668-0f40e5f1ab42" />
 
 <img width="839" height="491" alt="image" src="https://github.com/user-attachments/assets/f57eca40-8cf3-4caa-8343-4d0fef84ba27" />
@@ -28,12 +31,16 @@ Renaming Both workstations to L-PC1 and L-PC2 respectively
 ---
 
 ### Network Properties and Pings for PC1 and PC2
+<img width="975" height="566" alt="image" src="https://github.com/user-attachments/assets/dbe907f4-dd43-44ba-9235-338eb5a124ab" />
 
- 
+<img width="850" height="498" alt="image" src="https://github.com/user-attachments/assets/6929e5d8-3555-4745-977a-10dd649e0a7c" />
 
- 
+---
 
-Joining Both PCs to the Domain
+### Joining Both PCs to the Domain
+<img width="975" height="571" alt="image" src="https://github.com/user-attachments/assets/f65da0d5-879a-439d-844f-27adc0369f0a" />
+
+<img width="975" height="574" alt="image" src="https://github.com/user-attachments/assets/8c6e502f-73ae-443d-84ae-caff59ac0950" />
 
 
 
