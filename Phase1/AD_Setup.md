@@ -17,5 +17,6 @@ In this one, the following VMs will be used
     - Servers LAN Segment(192.168.1.0/28)
     - Office LAN Segment (192.168.1.32/28)
 
+![PFSENSE IPs](../images/phase1/pfsenseips.png)
 
 
