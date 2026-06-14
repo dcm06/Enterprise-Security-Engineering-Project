@@ -42,7 +42,7 @@ Once that is completed, test connection fromManagement PC to Server
 
 ## Step2: INSTALLING ACTIVE DIRECTORY DOMAIN SERVICES ON THE SERVER AND SETTING UP THE FOREST
 Now we would be installing the Active directory Domain Services using PoweShell cmdlet
-#### Install-WindowsFeature -Name “AD-Domain-Services”
+### Install-WindowsFeature -Name “AD-Domain-Services”
  
 
 Creating a New Local Admin user for management
