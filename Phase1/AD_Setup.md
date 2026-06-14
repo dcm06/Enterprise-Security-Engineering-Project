@@ -30,9 +30,13 @@ After installation, i assigned the interfaces to the correct networks and set up
 -	Management PC Static IP
 
 -	PfSense Firewall IPs
+
 ![](../images/phase1/pfsenseips.png)
 
 -	Firewall Rules to permit traffic for now
+
+![](../images/phase1/pfsenserules1.png)
+![](../images/phase1/connectiontest.png)
  
  
 
