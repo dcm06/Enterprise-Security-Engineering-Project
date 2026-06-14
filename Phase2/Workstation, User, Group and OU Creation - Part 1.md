@@ -1,4 +1,10 @@
-Renaming the PAW
+## PHASE2 - PART 1: Workstation, User, Group and OU Creation
+
+In this Phase, I will be setting up the two workstations L-PC1, and L-PC2 in their respective subnets, then joining them to the domain. After, Organizational Units will be created, then Groups, and then workstations and User locations will be modified.
+
+
+### Renaming the PAW
+---
  <img width="975" height="566" alt="image" src="https://github.com/user-attachments/assets/b184ed23-9d31-4f19-a2ef-9ca89bdd9196" />
 
 
