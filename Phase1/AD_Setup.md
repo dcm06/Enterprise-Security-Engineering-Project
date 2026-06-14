@@ -25,7 +25,7 @@ The goal of this lab is to setup and install Active directory Domain Services, s
 
 After installation, i assigned the interfaces to the correct networks and set up Static IP addresses for now..
 -	Server Static IP
-
+![](../images/phase1/serverstaticip.png)
 
 
 
