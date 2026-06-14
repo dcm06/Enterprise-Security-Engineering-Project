@@ -42,13 +42,26 @@ In this Phase, I will be setting up the two workstations L-PC1, and L-PC2 in the
 
 <img width="975" height="574" alt="image" src="https://github.com/user-attachments/assets/8c6e502f-73ae-443d-84ae-caff59ac0950" />
 
+### Test User login after Restart
+<img width="975" height="576" alt="image" src="https://github.com/user-attachments/assets/e28195df-dfaa-4546-a19d-73afa7b8cead" />
+
+---
 
 
-Test User login after Restart
- 
-Installing RSAT tools for remote management of the server
- 
- 
+
+
+## Installing RSAT tools on PAW for remote management of the server
+To get a list of all available RSAT tools online, i used
+   #### get-windowscapability -online -name "Rsat*" | Select-Object name
+
+
+To Install
+   #### get-windowscapability -online -name "Rsat-Name..."
+<img width="975" height="586" alt="image" src="https://github.com/user-attachments/assets/0e68c394-b529-49c7-a11b-13dd00018dfb" />
+<img width="975" height="551" alt="image" src="https://github.com/user-attachments/assets/799bd887-ec3d-47e2-abb6-36947ad9ce40" />
+
+---
+
  
 
 SETTING UP Ous
