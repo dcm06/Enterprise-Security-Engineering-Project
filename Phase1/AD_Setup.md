@@ -17,6 +17,37 @@ In this one, the following VMs will be used
     - Servers LAN Segment(192.168.1.0/28)
     - Office LAN Segment (192.168.1.32/28)
 
+
+
+The goal of this lab is to setup and install Active directory Domain Services, set up the forrest, join the management pc to the domain and setup firewall and routing between the two networks.
+
+## STEP1: STATIC IP CONFIGURATIONS
+
+After installation, i assigned the interfaces to the correct networks and set up Static IP addresses for now..
+-	Server Static IP
+
+
+
+
+
+
+
+
+
+-	Management PC Static IP
+ 
+
+-	PfSense Firewall IPs
+ 
+
+-	Firewall Rules to permit traffic for now
+ 
+ 
+
+
+Once that is completed, test connection from Server to Management PC
+
+
 ![PFSENSE IPs](../images/phase1/pfsenseips.png)
 
 
