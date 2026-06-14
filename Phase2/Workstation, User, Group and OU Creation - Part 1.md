@@ -101,10 +101,11 @@ CMDLET -
 
 ### Department / User Groups (4 groups)
 These are your core identity + access groups:
-•	HR_Users
-•	Finance_Users
-•	IT_Users
-•	Sales_Users
+-	HR_Users
+-	Finance_Users
+-	IT_Users
+-	Sales_Users
+
 Covers: file access, folder permissions, GPO targeting
 <img width="975" height="537" alt="image" src="https://github.com/user-attachments/assets/22912739-22de-4a70-84f2-d245bc96f2f1" />
 
@@ -126,6 +127,7 @@ These will allow Policies to apply or exclude a defined scope of users or device
 - Local_Admin_Access
 - Password_Expiry
 - Remote Desktop Access
+
 Covers: security enforcement, device control, policy filtering
 <img width="975" height="526" alt="image" src="https://github.com/user-attachments/assets/14a70655-e471-41f6-b7ad-fccbddfb6e20" />
 
@@ -139,7 +141,8 @@ For file shares + printers:
 -	FINANCE_File_Access
 -	SALES_File_Access
 -	SHARED_File_Access
-covers: NTFS permissions + shared drives
+
+Covers: NTFS permissions + shared drives
 
 ---
 
