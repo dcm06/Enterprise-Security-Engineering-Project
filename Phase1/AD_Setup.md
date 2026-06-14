@@ -2,7 +2,7 @@ Active Directory and Routing Setup
 ---
 ## Goal: Set-up Routing and Active Directory
 
-![Project Screenshot](../images/1751518866513.jpeg)
+![Project Screenshot](../images/Phase1networkimage.png)
 
 The store was divided into three departments (Subsequently tweaked going forward):
 * Management
