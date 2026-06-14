@@ -64,7 +64,7 @@ Firewall rules will be added when hardening
 - #### Set-NetFirewallProfile -Profile Domain, Private, Public -Enabled False
 - #### Get-NetFirewallProfile | Select-Object Name, Enabled
 
-![](../images/phase1/firewalllocalrules.png)
+![](../images/phase1/firewallruleslocal.png)
  
 Creating the forest and promoting the SERVER to domain controller
  
