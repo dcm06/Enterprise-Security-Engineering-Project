@@ -34,14 +34,14 @@ After installation, i assigned the interfaces to the correct networks and set up
 ![](../images/phase1/pfsenseips.png)
 
 -	Firewall Rules to permit traffic for now
-
+Once that is completed, test connection fromManagement PC to Server
 ![](../images/phase1/pfsenserules1.png)
 ![](../images/phase1/connectiontest.png)
  
  
 
 
-Once that is completed, test connection from Server to Management PC
+
 
 
 ![PFSENSE IPs](../images/phase1/pfsenseips.png)
