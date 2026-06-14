@@ -1,4 +1,4 @@
-## PHASE2 - PART 1: Workstation, User, Group and OU Creation
+# PHASE2 - PART 1: Workstation, User, Group and OU Creation
 
 In this Phase, I will be setting up the two workstations L-PC1, and L-PC2 in their respective subnets, then joining them to the domain. After, Organizational Units will be created, then Groups, and then workstations and User locations will be modified.
 
@@ -19,17 +19,15 @@ In this Phase, I will be setting up the two workstations L-PC1, and L-PC2 in the
 
 ---
 
- 
-
-Renaming and joining the standard workstations to the domain
+## Renaming and joining the standard workstations to the domain
 Renaming Both workstations to L-PC1 and L-PC2 respectively
- 
+<img width="833" height="487" alt="image" src="https://github.com/user-attachments/assets/1da9437e-f3ef-4f9f-8668-0f40e5f1ab42" />
 
- 
+<img width="839" height="491" alt="image" src="https://github.com/user-attachments/assets/f57eca40-8cf3-4caa-8343-4d0fef84ba27" />
 
+---
 
-
-Network Properties and Pings for PC1 and PC2
+### Network Properties and Pings for PC1 and PC2
 
  
 
