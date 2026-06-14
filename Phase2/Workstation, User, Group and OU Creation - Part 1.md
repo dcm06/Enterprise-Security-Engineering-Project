@@ -3,15 +3,21 @@
 In this Phase, I will be setting up the two workstations L-PC1, and L-PC2 in their respective subnets, then joining them to the domain. After, Organizational Units will be created, then Groups, and then workstations and User locations will be modified.
 
 
+ 
 
 ### Renaming the PAW
----
+
  <img width="975" height="566" alt="image" src="https://github.com/user-attachments/assets/b184ed23-9d31-4f19-a2ef-9ca89bdd9196" />
 
+---
 
-Joined to the Domain
- 
+### Joined the PAW to the Domain
 
+ CMDLET used
+ #### Add-Computer -domain "domain"
+<img width="975" height="654" alt="image" src="https://github.com/user-attachments/assets/6e1bea1d-a3a1-4580-9b1b-cc888873a11e" />
+
+---
 
  
 
