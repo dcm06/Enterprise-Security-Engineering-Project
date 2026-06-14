@@ -50,6 +50,7 @@ In this Phase, I will be setting up the two workstations L-PC1, and L-PC2 in the
 
 
 
+
 ## Installing RSAT tools on PAW for remote management of the server
 To get a list of all available RSAT tools online, i used
    #### get-windowscapability -online -name "Rsat*" | Select-Object name
@@ -64,58 +65,91 @@ To Install
 
  
 
-SETTING UP Ous
-
-London Branch
- 
-
- 
-Moving PCs to the right OUs to enable GP Management of Devices
- 
- 
-
- 
- 
 
 
+
+## SETTING UP OUs
+
+CMDLET - 
+   #### New-ADOrganizationalUnit -name "...." -Path "...."
+### London Branch
+<img width="975" height="537" alt="image" src="https://github.com/user-attachments/assets/22545bed-63ba-4e79-b4c4-7e2366ae2bf2" />
+
+<img width="975" height="546" alt="image" src="https://github.com/user-attachments/assets/00d4bcf6-c3d1-42aa-bd26-36f79d4defa0" />
+
+
+---
+
+
+#### Moving PCs to the right OUs to enable GPO Management of Devices
+CMDLET - 
+   #### Move-ADObject
+<img width="975" height="546" alt="image" src="https://github.com/user-attachments/assets/1ab1b172-daab-44e0-ab56-3272da00ad69" />
+<img width="975" height="532" alt="image" src="https://github.com/user-attachments/assets/925e7528-b2b5-415d-8275-2285a02d2a21" />
+<img width="975" height="551" alt="image" src="https://github.com/user-attachments/assets/a54cb6da-0517-4bda-90ce-12448bac2159" />
+
+---
+
+
+
+
  
-Groups Creations
--	Department / User Groups (4 groups)
- 
+## Group Creations
+CMDLET - 
+   #### New-ADGroup
+---
+
+### Department / User Groups (4 groups)
 These are your core identity + access groups:
 •	HR_Users
 •	Finance_Users
 •	IT_Users
 •	Sales_Users
-👉 Covers: file access, folder permissions, GPO targeting
+Covers: file access, folder permissions, GPO targeting
+<img width="975" height="537" alt="image" src="https://github.com/user-attachments/assets/22912739-22de-4a70-84f2-d245bc96f2f1" />
 
+---
+### Admin / IT Control Groups (5 groups)
+These enable delegation + restricted admin roles:
+- Server_Admins
+- Helpdesk_Admins
+- Database_Admins
+- Security_Admins
+- System_Admins
+<img width="975" height="519" alt="image" src="https://github.com/user-attachments/assets/47ed4f2a-07f2-4ffc-803e-0078e3a303b7" />
 
+---
 
-Admin / IT Control Groups (3 groups)
- 
--	These let you demonstrate delegation + restricted admin roles:
-•	Server_Admins
-•	Helpdesk_Tier1
+### Security Policy control groups (4 groups)
+These will allow Policies to apply or exclude a defined scope of users or devices
+- USB_Allowed_Users
+- Local_Admin_Access
+- Password_Expiry
+- Remote Desktop Access
+Covers: security enforcement, device control, policy filtering
+<img width="975" height="526" alt="image" src="https://github.com/user-attachments/assets/14a70655-e471-41f6-b7ad-fccbddfb6e20" />
 
+---
 
-Security Policy control groups
- 
-•	USB_Restricted_Users
-•	Local_Admin_Workstations
-•	Password_Strong_Policy_Users
-👉 Covers: security enforcement, device control, policy filtering
-
-
-Resource Access Groups (2 groups)
+### Resource Access Groups ( 5 groups)
  
 For file shares + printers:
-•	HR_File_Access
-•	IT_File_Access
-👉 Covers: NTFS permissions + shared drives
+-	HR_File_Access
+-	IT_File_Access
+-	FINANCE_File_Access
+-	SALES_File_Access
+-	SHARED_File_Access
+covers: NTFS permissions + shared drives
+
+---
 
 
 
-Moving created users to their respective Ous
+
+
+## Moving created users to their respective OUs
+<img width="975" height="543" alt="image" src="https://github.com/user-attachments/assets/30265e8c-c8d3-46dd-b0bb-c47d3059806f" />
+
  
 
 
