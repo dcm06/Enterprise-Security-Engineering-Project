@@ -1,4 +1,4 @@
-# PHASE2 - PART 1: Workstation, User, Group and OU Creation
+# PHASE 2 - PART 1: Workstation, User, Group and OU Creation
 
 In this Phase, I will be setting up the two workstations L-PC1, and L-PC2 in their respective subnets, then joining them to the domain. After, Organizational Units will be created, then Groups, and then workstations and User locations will be modified.
 
